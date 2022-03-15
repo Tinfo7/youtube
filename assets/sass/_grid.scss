@@ -1,0 +1,22 @@
+section {
+  display: flex;
+  height: calc(100% - 56px);
+  aside {
+    width: 240px;
+    @media (max-width: 1321px) {
+      width: 72px;
+    }
+    @media (max-width: 781px) {
+      width: 240px;
+      position: fixed;
+      top: 0;
+      left: -240px;
+      bottom: 0;
+    }
+
+  }
+  main {
+    flex: 1;
+    background-color: yellow;
+  }
+}

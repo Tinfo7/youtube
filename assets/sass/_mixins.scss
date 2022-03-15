@@ -1,0 +1,13 @@
+@mixin hide-scrollbar() {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@mixin flexbox($jutify:center, $align:center){
+    display: flex;
+    justify-content: $jutify;
+    align-items: $align;
+}
