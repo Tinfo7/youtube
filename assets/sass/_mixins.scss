@@ -6,8 +6,7 @@
   }
 }
 
-@mixin flexbox($jutify:center, $align:center){
-    display: flex;
-    justify-content: $jutify;
-    align-items: $align;
+@mixin colro-tag-a() {
+  text-decoration: none;
+  color: white;
 }

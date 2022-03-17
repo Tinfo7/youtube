@@ -1,7 +1,85 @@
 nav {
   display: flex;
+  justify-content: space-between;
   width: 100%;
   height: 56px;
   max-height: 56px;
   background-color: hsla(0, 0%, 53.3%, 0.4);
+  @include colro-tag-a();
+  .start {
+    display: flex;
+    a:nth-child(1) {
+      width: 25px;
+      height: 25px;
+      margin-left: 20px;
+      margin-top: 15px;
+      svg {
+        stroke: white;
+      }
+    }
+    a:nth-child(2) {
+      width: 100px;
+      height: 25px;
+      margin-left: 25px;
+      margin-top: 15px;
+      fill: white;
+    }
+  }
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    input {
+      width: 25%;
+      height: 70%;
+      border: 1px solid hsl(0, 0%, 18.82%);
+      background-color: black;
+      color: white;
+      font-size: 15px;
+      padding-left: 15px;
+    }
+    button {
+      cursor: pointer;
+      width: 4%;
+      height: 72%;
+      border: none;
+      outline: none;
+      border: 1px solid hsl(0, 0%, 18.82%);
+      background-color: hsla(0, 0%, 100%, 0.08);
+      a {
+        svg {
+          stroke: white;
+        }
+      }
+    }
+    div {
+      background-color: #181818;
+      width: 40px;
+      height: 40px;
+      margin-left: 15px;
+      border-radius: 50px;
+      a {
+        svg {
+          fill: white;
+          display: flex;
+          align-items: center;
+        }
+      }
+    }
+  }
+  .end {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    width: 12%;
+    a {
+      svg {
+        fill: white;
+      }
+    }
+    img {
+      clip-path: circle();
+      margin-right: 15px;
+    }
+  }
 }
