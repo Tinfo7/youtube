@@ -10,9 +10,9 @@ section aside { width: 240px; }
 
 @media (max-width: 781px) { section aside { width: 240px; position: fixed; top: 0; left: -240px; bottom: 0; } }
 
-section main { -webkit-box-flex: 1; -ms-flex: 1; flex: 1; background-color: yellow; }
+section main { -webkit-box-flex: 1; -ms-flex: 1; flex: 1; }
 
-nav { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; width: 100%; height: 56px; max-height: 56px; background-color: rgba(136, 136, 136, 0.4); text-decoration: none; color: white; }
+nav { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; width: 100%; height: 56px; max-height: 56px; background-color: rgba(33, 33, 33, 0.98); text-decoration: none; color: white; }
 
 nav .start { display: -webkit-box; display: -ms-flexbox; display: flex; }
 
@@ -24,27 +24,27 @@ nav .start a:nth-child(2) { width: 100px; height: 25px; margin-left: 25px; margi
 
 nav .center { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 
-nav .center input { width: 25%; height: 70%; border: 1px solid #303030; background-color: black; color: white; font-size: 15px; padding-left: 15px; }
+nav .center input { width: 572px; height: 40px; border: 1px solid #303030; background-color: #0000; color: white; font-size: 15px; padding-left: 15px; }
 
 nav .center button { cursor: pointer; width: 4%; height: 72%; border: none; outline: none; border: 1px solid #303030; background-color: rgba(255, 255, 255, 0.08); }
 
-nav .center button a svg { stroke: white; }
+nav .center button svg { stroke: white; margin-left: 7px; }
 
 nav .center div { background-color: #181818; width: 40px; height: 40px; margin-left: 15px; border-radius: 50px; }
 
-nav .center div a svg { fill: white; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+nav .center div a svg { fill: white; margin-left: 6px; margin-top: 6px; }
 
 nav .end { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; margin: 10px; width: 12%; }
 
-nav .end a svg { fill: white; }
+nav .end svg { fill: white; margin-top: 6px; }
 
 nav .end img { -webkit-clip-path: circle(); clip-path: circle(); margin-right: 15px; }
 
-aside { max-width: 240px; overflow: auto; }
+aside { max-width: 240px; overflow: auto; scrollbar-width: thin; scrollbar-color: red; }
 
 aside svg { fill: white; }
 
-aside hr { border-bottom: 0px solid white; margin-top: 20px; margin-bottom: 20px; }
+aside hr { border-bottom: 0px solid white; margin-top: 20px; }
 
 aside section { height: 1314px; width: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
 
@@ -54,7 +54,7 @@ aside section .first div { display: -webkit-box; display: -ms-flexbox; display: 
 
 aside section .first p { color: white; font-family: sans-serif; font-size: 15px; padding-top: 6px; padding-left: 20px; }
 
-aside section .second { height: 320px; margin-left: 20px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -ms-flex-pack: distribute; justify-content: space-around; margin-top: 65px; }
+aside section .second { height: 320px; margin-left: 20px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -ms-flex-pack: distribute; justify-content: space-around; margin-top: 40px; }
 
 aside section .second h3 { font-size: 15px; font-family: sans-serif; color: #aaa; }
 
@@ -89,4 +89,24 @@ aside footer .second-text a { text-decoration: none; color: #aaa; font-family: s
 aside footer p { margin-top: 20px; font-family: sans-serif; font-size: 12px; font-weight: bold; color: #717171; }
 
 main { overflow: auto; }
+
+main hr { border-bottom: 0px solid white; }
+
+main .header-main { width: 100%; height: 56px; max-height: 56px; background-color: rgba(33, 33, 33, 0.98); }
+
+main .content { width: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; }
+
+main .content .row { -ms-flex-wrap: wrap; flex-wrap: wrap; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; width: 100%; height: 324px; }
+
+main .content .row div { width: 405px; height: 359px; margin-top: 20px; cursor: pointer; }
+
+main .content .row .box-1 .img-video { width: 100%; }
+
+main .content .row .box-1 .channel-text { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; width: 100%; height: 17px; margin-top: 5px; }
+
+main .content .row .box-1 .channel-text .img-channel { width: 35px; height: 35px; -webkit-clip-path: circle(); clip-path: circle(); }
+
+main .content .row .box-1 .channel-text h1 { color: white; font-size: 18px; margin-left: 20px; font-family: sans-serif; }
+
+main .content .row .box-1 .channel-text p { margin-left: 55px; margin-top: 7px; font-family: sans-serif; font-size: 13px; color: #aaa; }
 /*# sourceMappingURL=style.css.map */

@@ -4,7 +4,7 @@ nav {
   width: 100%;
   height: 56px;
   max-height: 56px;
-  background-color: hsla(0, 0%, 53.3%, 0.4);
+  background-color: rgba(33, 33, 33, 0.98);
   @include colro-tag-a();
   .start {
     display: flex;
@@ -30,10 +30,10 @@ nav {
     justify-content: center;
     align-items: center;
     input {
-      width: 25%;
-      height: 70%;
+      width: 572px;
+      height: 40px;
       border: 1px solid hsl(0, 0%, 18.82%);
-      background-color: black;
+      background-color: #0000;
       color: white;
       font-size: 15px;
       padding-left: 15px;
@@ -46,10 +46,9 @@ nav {
       outline: none;
       border: 1px solid hsl(0, 0%, 18.82%);
       background-color: hsla(0, 0%, 100%, 0.08);
-      a {
-        svg {
-          stroke: white;
-        }
+      svg {
+        stroke: white;
+        margin-left: 7px;
       }
     }
     div {
@@ -61,8 +60,8 @@ nav {
       a {
         svg {
           fill: white;
-          display: flex;
-          align-items: center;
+          margin-left: 6px;
+          margin-top: 6px;
         }
       }
     }
@@ -72,11 +71,10 @@ nav {
     flex-direction: row;
     margin: 10px;
     width: 12%;
-    a {
       svg {
         fill: white;
+        margin-top: 6px;
       }
-    }
     img {
       clip-path: circle();
       margin-right: 15px;
