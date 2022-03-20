@@ -6,6 +6,7 @@ section {
     @media (max-width: 1321px) {
       width: 72px;
     }
+    
     @media (max-width: 781px) {
       width: 240px;
       position: fixed;
@@ -13,7 +14,6 @@ section {
       left: -240px;
       bottom: 0;
     }
-
   }
   main {
     flex: 1;
