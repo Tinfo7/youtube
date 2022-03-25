@@ -2,6 +2,23 @@ aside {
   max-width: 240px;
   overflow: auto;
   scrollbar-width: thin;
+  @media (max-width: 1321px) {
+    section {
+      height: auto;
+    }
+    footer,
+    .links div:nth-child(2),
+    .subscriptions,
+    .threthy,
+    .fourthy,
+    .links:nth-child(1) span {
+      display: none !important;
+    }
+    .links :nth-child(1) div {
+      margin: 15px auto 0 !important;
+      padding: 13px;
+    }
+  }
   svg {
     width: 24px;
     height: 24px;
@@ -85,7 +102,7 @@ aside {
   }
   footer {
     height: auto;
-    a{
+    a {
       color: #aaa;
       font-family: sans-serif;
       font-size: 13px;
@@ -95,10 +112,9 @@ aside {
       padding-bottom: 20px;
       padding-left: 15px;
     }
-    :nth-child(3){
+    :nth-child(3) {
       padding-bottom: 20px;
       padding-right: 15px;
-
     }
     span {
       margin-top: 20px;
