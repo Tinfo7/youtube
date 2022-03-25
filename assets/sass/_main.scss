@@ -13,46 +13,52 @@ main {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    :nth-child(1) {
+      margin-left: 16px;
+    }
     .row {
       flex-wrap: wrap;
       display: flex;
-      flex-direction: column;
       align-items: center;
-      width: 100%;
       height: 324px;
-      div {
-        width: 405px;
-        height: 359px;
-        margin-top: 20px;
-        cursor: pointer;
-      }
+      margin-left: 47px;
+      margin-top: 20px;
       .box-1 {
-        .img-video {
-          width: 100%;
-        }
-        .channel-text {
-          display: flex;
-          flex-wrap: wrap;
-          width: 100%;
-          height: 17px;
-          margin-top: 5px;
-          .img-channel {
-            width: 35px;
-            height: 35px;
-            clip-path: circle();
+        width: 359px;
+        height: 302px;
+        margin-left: 8px;
+        margin-right: 8px;
+        margin-bottom: 40px;
+        a {
+          text-decoration: none;
+          color: white;
+          font-family: sans-serif;
+          .img-video {
+            width: 359px;
+            height: 202px;
           }
-          h1 {
-            color: white;
-            font-size: 18px;
-            margin-left: 20px;
-            font-family: sans-serif;
-          }
-          p {
-            margin-left: 55px;
-            margin-top: 7px;
-            font-family: sans-serif;
-            font-size: 13px;
-            color: #aaa;
+          .channel-text {
+            display: flex;
+            flex-wrap: wrap;
+            margin-left: 31px;
+            margin-right: -33px;
+            .img-channel {
+              width: 35px;
+              height: 35px;
+              border-radius: 50px;
+              margin-left: 0px;
+            }
+            h4 {
+              color: white;
+              margin-left: 13px;
+              font-size: 15px;
+            }
+            span {
+              margin-left: 45px;
+              margin-top: 7px;
+              font-size: 13px;
+              color: #aaa;
+            }
           }
         }
       }

@@ -35,8 +35,12 @@ nav {
       border: 1px solid hsl(0, 0%, 18.82%);
       background-color: #0000;
       color: white;
-      font-size: 15px;
       padding-left: 15px;
+
+      font-family: "Roboto", "Noto", sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
     }
     button {
       cursor: pointer;
@@ -71,12 +75,12 @@ nav {
     flex-direction: row;
     margin: 10px;
     width: 12%;
-      svg {
-        fill: white;
-        margin-top: 6px;
-      }
+    svg {
+      fill: white;
+      margin-top: 6px;
+    }
     img {
-      clip-path: circle();
+      border-radius: 50px;
       margin-right: 15px;
     }
   }

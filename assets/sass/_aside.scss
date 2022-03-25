@@ -8,11 +8,14 @@ aside {
     fill: white;
   }
   section {
+    height: 1165px;
     width: 100%;
     display: flex;
     flex-direction: column;
     .links,
-    .subscriptions {
+    .subscriptions,
+    .threthy,
+    .fourthy {
       & > div {
         display: flex;
         flex-direction: column;
@@ -39,8 +42,6 @@ aside {
         }
       }
     }
-    .links {
-    }
     .subscriptions {
       h3 {
         font-size: 14px;
@@ -59,7 +60,7 @@ aside {
         align-items: center;
         padding-left: 20px;
         height: 40px;
-        &:hover{
+        &:hover {
           background-color: #383838;
         }
         span {
@@ -81,75 +82,31 @@ aside {
         margin-left: 20px;
       }
     }
-    .threthy {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      padding: 20px 0px 20px 20px;
-      a {
-        display: flex;
-        align-items: center;
-        cursor: pointer;
-        height: 40px;
-        text-decoration: none;
-      }
-      p {
-        color: white;
-        font-family: sans-serif;
-        font-size: 15px;
-        margin-left: 20px;
-      }
-    }
-    .fourthy {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      padding: 0px 0px 0px 20px;
-      a {
-        display: flex;
-        align-items: center;
-        cursor: pointer;
-        text-decoration: none;
-      }
-      p {
-        color: white;
-        font-family: sans-serif;
-        font-size: 15px;
-        margin-left: 20px;
-      }
-    }
   }
   footer {
-    height: 241px;
-    margin-left: 20px;
-    .first-text {
-      a {
-        margin-left: 6px;
-        line-height: 20px;
-        text-decoration: none;
-        color: #aaa;
-        font-family: sans-serif;
-        font-size: 13px;
-        font-weight: bold;
-      }
+    height: auto;
+    a{
+      color: #aaa;
+      font-family: sans-serif;
+      font-size: 13px;
+      text-decoration: none;
+      line-height: 20px;
+      font-weight: bold;
+      padding-bottom: 20px;
+      padding-left: 15px;
     }
-    .second-text {
-      a {
-        text-decoration: none;
-        color: #aaa;
-        font-family: sans-serif;
-        font-weight: bold;
-        font-size: 13px;
-        line-height: 20px;
-        margin-left: 3px;
-      }
+    :nth-child(3){
+      padding-bottom: 20px;
+      padding-right: 15px;
+
     }
-    p {
+    span {
       margin-top: 20px;
       font-family: sans-serif;
       font-size: 12px;
       font-weight: bold;
       color: #717171;
+      padding-left: 20px;
     }
   }
 }

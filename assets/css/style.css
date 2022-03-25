@@ -24,7 +24,7 @@ nav .start a:nth-child(2) { width: 100px; height: 25px; margin-left: 25px; margi
 
 nav .center { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 
-nav .center input { width: 572px; height: 40px; border: 1px solid #303030; background-color: #0000; color: white; font-size: 15px; padding-left: 15px; }
+nav .center input { width: 572px; height: 40px; border: 1px solid #303030; background-color: #0000; color: white; padding-left: 15px; font-family: "Roboto", "Noto", sans-serif; font-size: 16px; font-weight: 400; line-height: 24px; }
 
 nav .center button { cursor: pointer; width: 4%; height: 72%; border: none; outline: none; border: 1px solid #303030; background-color: rgba(255, 255, 255, 0.08); }
 
@@ -38,21 +38,21 @@ nav .end { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-bo
 
 nav .end svg { fill: white; margin-top: 6px; }
 
-nav .end img { -webkit-clip-path: circle(); clip-path: circle(); margin-right: 15px; }
+nav .end img { border-radius: 50px; margin-right: 15px; }
 
 aside { max-width: 240px; overflow: auto; scrollbar-width: thin; }
 
 aside svg { width: 24px; height: 24px; fill: white; }
 
-aside section { width: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
+aside section { height: 1165px; width: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
 
-aside section .links > div, aside section .subscriptions > div { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; border-bottom: 1px solid #383838; padding-bottom: 12px; margin-bottom: 12px; }
+aside section .links > div, aside section .subscriptions > div, aside section .threthy > div, aside section .fourthy > div { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; border-bottom: 1px solid #383838; padding-bottom: 12px; margin-bottom: 12px; }
 
-aside section .links > div a, aside section .subscriptions > div a { height: 40px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; padding-left: 24px; padding-right: 24px; text-decoration: none; }
+aside section .links > div a, aside section .subscriptions > div a, aside section .threthy > div a, aside section .fourthy > div a { height: 40px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; padding-left: 24px; padding-right: 24px; text-decoration: none; }
 
-aside section .links > div a:hover, aside section .links > div a.active, aside section .subscriptions > div a:hover, aside section .subscriptions > div a.active { background-color: #383838; }
+aside section .links > div a:hover, aside section .links > div a.active, aside section .subscriptions > div a:hover, aside section .subscriptions > div a.active, aside section .threthy > div a:hover, aside section .threthy > div a.active, aside section .fourthy > div a:hover, aside section .fourthy > div a.active { background-color: #383838; }
 
-aside section .links > div a span, aside section .subscriptions > div a span { color: white; font-family: sans-serif; font-size: 15px; margin-left: 20px; }
+aside section .links > div a span, aside section .subscriptions > div a span, aside section .threthy > div a span, aside section .fourthy > div a span { color: white; font-family: sans-serif; font-size: 15px; margin-left: 20px; }
 
 aside section .subscriptions h3 { font-size: 14px; font-family: sans-serif; color: #aaa; padding-left: 20px; margin-bottom: 10px; text-transform: uppercase; }
 
@@ -66,25 +66,13 @@ aside section .subscriptions img { width: 24px; height: 24px; border-radius: 50p
 
 aside section .subscriptions span { color: white; font-family: sans-serif; font-size: 15px; font-weight: bold; margin-left: 20px; }
 
-aside section .threthy { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -ms-flex-pack: distribute; justify-content: space-around; padding: 20px 0px 20px 20px; }
+aside footer { height: auto; }
 
-aside section .threthy a { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; cursor: pointer; height: 40px; text-decoration: none; }
+aside footer a { color: #aaa; font-family: sans-serif; font-size: 13px; text-decoration: none; line-height: 20px; font-weight: bold; padding-bottom: 20px; padding-left: 15px; }
 
-aside section .threthy p { color: white; font-family: sans-serif; font-size: 15px; margin-left: 20px; }
+aside footer :nth-child(3) { padding-bottom: 20px; padding-right: 15px; }
 
-aside section .fourthy { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -ms-flex-pack: distribute; justify-content: space-around; padding: 0px 0px 0px 20px; }
-
-aside section .fourthy a { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; cursor: pointer; text-decoration: none; }
-
-aside section .fourthy p { color: white; font-family: sans-serif; font-size: 15px; margin-left: 20px; }
-
-aside footer { height: 241px; margin-left: 20px; }
-
-aside footer .first-text a { margin-left: 6px; line-height: 20px; text-decoration: none; color: #aaa; font-family: sans-serif; font-size: 13px; font-weight: bold; }
-
-aside footer .second-text a { text-decoration: none; color: #aaa; font-family: sans-serif; font-weight: bold; font-size: 13px; line-height: 20px; margin-left: 3px; }
-
-aside footer p { margin-top: 20px; font-family: sans-serif; font-size: 12px; font-weight: bold; color: #717171; }
+aside footer span { margin-top: 20px; font-family: sans-serif; font-size: 12px; font-weight: bold; color: #717171; padding-left: 20px; }
 
 main { overflow: auto; }
 
@@ -94,17 +82,21 @@ main .header-main { width: 100%; height: 56px; max-height: 56px; background-colo
 
 main .content { width: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; }
 
-main .content .row { -ms-flex-wrap: wrap; flex-wrap: wrap; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; width: 100%; height: 324px; }
+main .content :nth-child(1) { margin-left: 16px; }
 
-main .content .row div { width: 405px; height: 359px; margin-top: 20px; cursor: pointer; }
+main .content .row { -ms-flex-wrap: wrap; flex-wrap: wrap; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; height: 324px; margin-left: 47px; margin-top: 20px; }
 
-main .content .row .box-1 .img-video { width: 100%; }
+main .content .row .box-1 { width: 359px; height: 302px; margin-left: 8px; margin-right: 8px; margin-bottom: 40px; }
 
-main .content .row .box-1 .channel-text { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; width: 100%; height: 17px; margin-top: 5px; }
+main .content .row .box-1 a { text-decoration: none; color: white; font-family: sans-serif; }
 
-main .content .row .box-1 .channel-text .img-channel { width: 35px; height: 35px; -webkit-clip-path: circle(); clip-path: circle(); }
+main .content .row .box-1 a .img-video { width: 359px; height: 202px; }
 
-main .content .row .box-1 .channel-text h1 { color: white; font-size: 18px; margin-left: 20px; font-family: sans-serif; }
+main .content .row .box-1 a .channel-text { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; margin-left: 31px; margin-right: -33px; }
 
-main .content .row .box-1 .channel-text p { margin-left: 55px; margin-top: 7px; font-family: sans-serif; font-size: 13px; color: #aaa; }
+main .content .row .box-1 a .channel-text .img-channel { width: 35px; height: 35px; border-radius: 50px; margin-left: 0px; }
+
+main .content .row .box-1 a .channel-text h4 { color: white; margin-left: 13px; font-size: 15px; }
+
+main .content .row .box-1 a .channel-text span { margin-left: 45px; margin-top: 7px; font-size: 13px; color: #aaa; }
 /*# sourceMappingURL=style.css.map */
