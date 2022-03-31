@@ -102,27 +102,39 @@ aside {
   }
   footer {
     height: auto;
-    a {
-      color: #aaa;
-      font-family: sans-serif;
-      font-size: 13px;
-      text-decoration: none;
-      line-height: 20px;
-      font-weight: bold;
-      padding-bottom: 20px;
-      padding-left: 15px;
+    .links-primary {
+      padding-top: 16px;
+      padding-right: 24px;
+      padding-left: 19px;
+      a {
+        @include colro-tag-a();
+        font-family: sans-serif;
+        font-size: 13px;
+        font-weight: bold;
+        margin-right: 8px;
+      }
     }
-    :nth-child(3) {
-      padding-bottom: 20px;
-      padding-right: 15px;
+    .links-secondary {
+      padding-top: 16px;
+      padding-left: 19px;
+      a {
+        @include colro-tag-a();
+        font-family: sans-serif;
+        font-size: 13px;
+        font-weight: bold;
+        margin-right: 8px;
+      }
     }
-    span {
-      margin-top: 20px;
-      font-family: sans-serif;
-      font-size: 12px;
-      font-weight: bold;
-      color: #717171;
-      padding-left: 20px;
+    .google {
+      margin: 16px 24px 16px 24px;
+      span {
+        margin-top: 20px;
+        font-family: sans-serif;
+        font-size: 12px;
+        font-weight: bold;
+        color: #717171;
+        padding-left: 20px;
+      }
     }
   }
 }
