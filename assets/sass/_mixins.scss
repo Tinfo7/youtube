@@ -6,7 +6,7 @@
   }
 }
 
-@mixin colro-tag-a() {
+@mixin colro-tag-a($color: #aaa) {
   text-decoration: none;
-  color: white;
+  color: $color;
 }
