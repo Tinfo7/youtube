@@ -103,9 +103,9 @@ aside {
   footer {
     height: auto;
     .links-primary {
-      padding-top: 16px;
-      padding-right: 24px;
-      padding-left: 19px;
+    padding-top: 16px;
+    padding-left: 19px;
+    padding-right: 24px;
       a {
         @include colro-tag-a();
         font-family: sans-serif;
