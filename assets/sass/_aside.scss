@@ -2,6 +2,7 @@ aside {
   max-width: 240px;
   overflow: auto;
   scrollbar-width: thin;
+  background-color: #212121;
   @media (max-width: 1321px) {
     section {
       height: auto;
